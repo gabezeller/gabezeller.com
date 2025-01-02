@@ -1,0 +1,32 @@
+.header {
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+
+    padding: 3px 10%;
+}
+.title-text {
+    font-size: 3em;
+    font-weight: bold;
+    
+
+    margin: 0px 16px;
+}
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+
+}
+.button {
+    cursor: pointer;
+    font-size: 2em;
+
+    margin: 0px 6px;
+}
