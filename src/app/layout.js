@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono, Handjet } from "next/font/google";
 import "./globals.css";
+import Header from "./Components/header"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,8 +28,16 @@ export default function RootLayout({ children }) {
       <body
         className={handJet.className}
       >
+        <Header/>
+        <main>
+
+        </main>
         {children}
       </body>
     </html>
+
+
+
+
   );
 }
