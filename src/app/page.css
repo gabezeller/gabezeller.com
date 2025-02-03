@@ -1,11 +1,107 @@
 .main {
     background-image: url("/images/redbackground.jpg");
-    background-size: cover;
+    
     background-repeat: none;
+    background-attachment: fixed;
     /* background-size: 100% 100%; */
+    background-size: cover;
 
     color: white;
+
+    height: 88vh;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    
+    
 }
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-50vw);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .logo {
     width: 5vw;
 }
+.main-text {
+    text-align: right;
+    
+}
+.greeting {
+    font-size: 50px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+.field {
+    font-size: 35px;
+
+
+    animation: 1.5s ease-out 0s 1 slideInFromLeft;
+}
+.resumeicon {
+    background-color: white;
+    color: black;
+    mix-blend-mode: lighten;
+
+    border-radius: 100px;
+    padding: 3px 10px;
+    font-size: 28px;
+
+    box-shadow: 3px 3px 0px darkred;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+
+    margin-top: 10px;
+
+    animation: 2s ease-out 0s 1 slideInFromLeft;
+}
+.resumeicon:hover {
+    background-color: red;
+    
+}
+@media (max-width: 800px) {
+    .main {
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .main-text {
+        text-align: left;
+        
+        
+        
+        
+    }
+    .resumeicon {
+        margin-left: 0px;
+        /* margin-right: auto; */
+        
+        
+    }
+    .icons {
+        margin:0px;
+    }
+}
+@media (max-width: 600px) {
+    .main-text {
+        padding: 0px 35px;
+
+    }
+    .field {
+        font-size: 30px;
+    }
+    .headshot {
+        width: 300px;
+        height: auto;
+    }
+}
+
