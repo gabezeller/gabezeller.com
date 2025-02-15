@@ -52,19 +52,27 @@
     font-size: 2em;
 
     margin: 0px 6px;
+    transition: color 0.3s ease
+
 }
 .button:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    color: red;
 }
 .icon {
     height: 30px;
     width: auto;
 
     margin: 0px 5px;
+
+    
+    transition: color 0.3s ease
 }
 .icon:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
+    color: red;
 }
+
 .icons {
     display: flex;
     flex-direction: row;

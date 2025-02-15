@@ -3,6 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+// import { Linkedin, LogoGithub } from '@geist/icons';
+// import { Github, Linkedin } from '@geist-ui/icons';
+import { LuLinkedin, LuGithub  } from "react-icons/lu";
 import "./header.css";
 
 
@@ -40,10 +43,14 @@ const Header = () => {
 
                     <div className="icons">
                         <Link href="https://www.linkedin.com/in/gabe-zeller-987355217/">
-                            <Image class="icon" alt="Linkedin Icon" src="/images/linkedinicon.png" width="300" height="300"/>
+                            {/* <Image class="icon" alt="Linkedin Icon" src="/images/linkedinicon.png" width="300" height="300"/> */}
+                            <LuLinkedin className="icon"/>
+                            {/* <Linkedin className="icon-hover" color="red" /> */}
                         </Link>
                         <Link href="https://github.com/gabezeller">
-                            <Image class="icon" alt="Github Icon" src="/images/githubicon.png" width="300" height="300"/>
+                            {/* <Image class="icon" alt="Github Icon" src="/images/githubicon.png" width="300" height="300"/> */}
+                            <LuGithub className="icon" />
+                            {/* <Github className="icon-hover" color="red" /> */}
                         </Link>
                     </div>
                 </div>
