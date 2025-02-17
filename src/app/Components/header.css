@@ -4,6 +4,7 @@
     position: sticky;
     top: 0;
 
+    z-index: 100;
 
 
     
@@ -40,6 +41,12 @@
     align-items: center;
 
 }
+.navlist {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -149,6 +156,14 @@
 
         padding-top: 10px;
       }
+    .navlist {
+        flex-direction: column;
+        
+    }
+    .icon {
+        margin: 5px;
+    }
+   
 
       .navbar.show {
         display: flex;

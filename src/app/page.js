@@ -17,9 +17,9 @@ export default function Home() {
             {/* <Link href="https://www.linkedin.com/in/gabe-zeller-987355217/"><Image class="logo" alt="Linkedin Icon" src="/images/linkedinicon.png" width="300" height="300"/></Link>
             <Link href="https://github.com/gabezeller"><Image class="logo" alt="Github Icon" src="/images/githubicon.png" width="300" height="300"/></Link> */}
             <Link className="resumeicon" href="images/Gabe_Zeller_Resume.pdf">
-                <div>
+                <span>
                   <b>Resume</b>
-                </div>
+                </span>
             </Link>
         
         </div>

@@ -28,32 +28,28 @@ const Header = () => {
         <div className="header">
             <div className="header-content">
                 <div className="title">
-                    <h1 className="title-text">Gabe Zeller</h1>
+                    <Link href={"/"} onClick={toggleMenu}><h1 className="title-text">Gabe Zeller</h1></Link>
                 </div>
                 <button className='hamburger' onClick={toggleMenu}>
                     ☰
                 </button>
-                <div className={`navbar ${menuOpen ? "show" : ""}`}>
-                    <div className="button projects-button" >
-                        Projects
-                    </div>
-                    <div className="button aboutme-button">
-                        About Me
-                    </div>
+                <nav className={`navbar ${menuOpen ? "show" : ""}`}>
+                    <ul className="navlist">
+                        <li className="button projects-button"><Link href={"/projects"} onClick={toggleMenu}>Projects</Link></li>
+                        <li className="button aboutme-button">About Me</li>
+                        <li>                        
+                            <Link href="https://www.linkedin.com/in/gabe-zeller-987355217/" onClick={toggleMenu}>
+                                <LuLinkedin className="icon"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="https://github.com/gabezeller" onClick={toggleMenu}>
+                                <LuGithub className="icon" />
+                            </Link>
+                        </li>
+                    </ul>
 
-                    <div className="icons">
-                        <Link href="https://www.linkedin.com/in/gabe-zeller-987355217/">
-                            {/* <Image class="icon" alt="Linkedin Icon" src="/images/linkedinicon.png" width="300" height="300"/> */}
-                            <LuLinkedin className="icon"/>
-                            {/* <Linkedin className="icon-hover" color="red" /> */}
-                        </Link>
-                        <Link href="https://github.com/gabezeller">
-                            {/* <Image class="icon" alt="Github Icon" src="/images/githubicon.png" width="300" height="300"/> */}
-                            <LuGithub className="icon" />
-                            {/* <Github className="icon-hover" color="red" /> */}
-                        </Link>
-                    </div>
-                </div>
+                </nav>
             </div>
         </div>
     );

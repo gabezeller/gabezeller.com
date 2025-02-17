@@ -1,0 +1,70 @@
+{
+    "projects": [
+        { "title": "Midnight Cram Horror Game",
+            "category": "Software",
+            "skills": "Game Development, Unreal Engine, Blueprints",
+            "bullets": [
+                "Collaborated on developing a horror video game set in the UIUC Grainger Library using Unreal Engine.",
+                "Programmed in-game mechanics for 7 key features such as player inventory with Unreal Engine Blueprints.",
+                "Designed and implemented 3 in-game menus and many adaptive UI components such as inventory hot bar."
+            ],
+            "paragraphs": [
+                "During the Spring 2024 semester, I took CS 415, a Game Development course where I learned to use Unreal Engine and Blueprints. For our final project, I teamed up with other ambitious students to develop a horror game set in the very place we had all taken so many exams—the UIUC Grainger Engineering Library. Our antagonist? None other than Grainger Bob, the iconic statue that sits at the library's entrance.",
+                "The game's objective is to locate several note pages scattered between the basement and main floor while evading Bob, conserving flashlight battery, and solving puzzles.",
+                "This project required great communication and organization from our team. We divided tasks based on interests and skill sets, utilized GitHub for version control, and supported each other throughout the development process.",
+                "I contributed several visual elements to the game. I created the start, death, and win menus, complete with their mechanics. Additionally, I developed the functionality for the player inventory, allowing players to switch, use, and collect items. This included designing the inventory UI and player action prompts, such as 'Press H to hide.' My favorite contribution was designing a possessed computer enemy that would draw the player in and force them to convert a byte to an integer to avoid losing the game."
+
+            ],
+            "images": [
+                "/images/midnightcrammenu.png"
+            ]
+
+        },
+
+        {
+            "title": "Illini Happenings App",
+            "category" : "Software",
+            "skills": "JavaScript, React-Native, Cloud Firestore, Git",
+            "bullets": [
+                "Collaborated to develop a full-stack mobile app showcasing user-uploaded events on the UIUC campus.",
+                "Developed 100% of the app home screen front-end by utilizing JavaScript and React Native.",
+                "Integrated the input screen with Cloud Firestore, allowing for writing to the database for user event uploads.",
+                "Connected the home screen to Firebase and implemented logic for querying the Cloud Firestore database, displaying queried events, and enabling seamless navigation to event descriptions via event listings."
+            ],
+            "paragraphs": [
+                "In the Spring of 2024, I became a member of Project Code, a campus organization that unites students for various software development projects. Through this group, I joined a team dedicated to creating a mobile app designed to help users discover campus events while enabling campus groups to upload their events and boost visibility.",
+                "Despite being my first experience with React Native and advanced JavaScript, I dove into building the app's UI components and embraced the learning curve. I took charge of developing the front-end for the home screen, which serves as the app's main interface, and made contributions to the event upload screen.",
+                "This experience also marked my initial encounter with a cloud NoSQL database—Google's Cloud Firestore. Integrating this with the front-end was exciting. For the home screen, I handled database integration by querying for current events and ensuring smooth navigation between event listings and their details. On the input screen, I focused on storing user-generated data, such as event titles and dates, creating event documents, and uploading them to the database."
+            ],
+            "images" : [
+                "/images/HomescreenCrop.png",
+                "/images/HomeScreen.png",
+                "/images/InputScreen.png"
+            ]
+        },
+        {
+            "title": "Portfolio Website",
+            "category": "Software",
+            "skills": "HTML, CSS",
+            "bullets": ["Designed and developed a portfolio website to showcase projects and personal information.",
+                        "Developed in Visual Studio Code using HTML and CSS and hosted using GitHub pages.",
+                        "Learned HTML and CSS through online resources and experimentation with little previous experience."
+                    ],
+
+            "paragraphs": ["During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform."],
+            "images": ["/images/homepagePic.png"]
+            
+        },
+        {
+            "title": "Illinois Crime",
+            "category": "GIS",
+            "skills": "R, R Studio, Data Analysis",
+            "bullets": [],
+            "paragraphs": [],
+            "images": [
+                "/images/illinoiscrime.png"
+            ]
+        }
+
+    ]
+}

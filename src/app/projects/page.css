@@ -1,0 +1,130 @@
+.main {
+    background-image: url("/images/redbackground.jpg");
+    
+    background-repeat: none;
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: white;
+
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+
+    min-height: 88vh;
+}
+.projects-title {
+    font-size: 120px;
+    font-weight: 600;
+}
+.project-section {
+    
+}
+.category {
+    font-size: 60px;
+    text-align: center;
+
+    
+}
+.project-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-card {
+    width: 300px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+
+    margin: 10px;
+
+
+    position: relative;
+
+    transition: all 0.1s ease-in;
+
+}
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: all 0.1s ease-in;
+    
+}
+.project-text {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    transition: opacity 0.1s ease-in;
+
+    width: 80%;
+
+}
+.project-title {
+    font-size: 1.75rem;
+    font-weight: 650;
+}
+.sub-text {
+    font-size: 1.25rem;
+}
+.project-card:hover .project-image {
+    filter: brightness(0.5) blur(2px);
+}
+.project-card:hover .project-text {
+    opacity: 1;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .project-cards {
+        width: 80vw; /* Fixed container width */
+        overflow-x:scroll; /* Enable horizontal scrolling */
+        
+        justify-content: unset;
+        
+        
+
+        flex-wrap: nowrap;
+
+        scrollbar-color: white rgba(0, 0, 0, 0);
+        scrollbar-width: thin;
+        scrollbar-arrow-color: rgba(0, 0, 0, 0);
+        
+    }
+   
+    .project-card {
+        display: inline-block;
+        width: 240px;
+         
+        
+    }
+    .project-image {
+        filter: brightness(0.5) blur(2px);
+    }
+    .project-text {
+        opacity: 1;
+    }
+    .projects-title {
+        font-size: 60px;
+    }
+    .category {
+        font-size: 30px;
+    }
+}
