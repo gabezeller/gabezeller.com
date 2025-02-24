@@ -1,3 +1,5 @@
+
+
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./Components/header";
@@ -5,7 +7,11 @@ import HomePage from "./Components/homepage";
 import "./page.css"
 
 
+
+
 export default function Home() {
+
+
   return (
     <div className="main">
       <div className="main-text">

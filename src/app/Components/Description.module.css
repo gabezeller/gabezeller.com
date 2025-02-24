@@ -1,0 +1,91 @@
+
+.description {
+    background-color: darkred;
+    color: white;
+
+    width: 80vw;
+    padding: 25px;
+
+    border-radius: 20px;
+    border: solid white 5px;
+    border-style: ridge;
+
+    transition: all 0.1s ease-in;
+}
+.mainContent {
+    display: flow-root;
+    
+}
+.title {
+    font-size: 30px;
+    font-weight: 600;
+}
+.skills {
+    font-size: 20px;
+}
+.bullets {
+    list-style:disc;
+    list-style-position:outside;
+
+    padding-left: 1.5em;
+}
+.bullet {
+    
+    font-size: 18px;
+}
+.divider {
+    width: 100px;
+    border-bottom: solid white 2px;
+    margin: 20px 0px;
+}
+.imageSlideshow {
+    /* width: 40%;
+    border: solid purple 1px; */
+    
+}
+.imageSlide {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.projectImage {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-height: 500px;
+    width: auto;
+}
+.slideContainer {
+    width: 50%;
+    min-width: 500px;
+    
+    float: left;
+    margin-right: 20px;
+
+    margin-bottom: 20px;
+    
+}
+.embed {
+    width: 50%;
+    min-width: 500px;
+    height: 350px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.paragraphs {
+}
+.paragraph {
+    
+    font-size: 18px;
+    margin-bottom: 20px;
+    
+}
+
+@media (max-width: 600px) {
+    .description {
+        width: 100vw;
+    }
+}
+

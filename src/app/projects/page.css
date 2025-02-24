@@ -1,4 +1,4 @@
-.main {
+.projects {
     background-image: url("/images/redbackground.jpg");
     
     background-repeat: none;
@@ -20,6 +20,9 @@
 .projects-title {
     font-size: 120px;
     font-weight: 600;
+
+    text-align: center;
+
 }
 .project-section {
     
@@ -91,11 +94,29 @@
 .project-card:hover {
     transform: scale(1.05);
 }
+.description {
+    position: fixed;
+    top: 92px;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    z-index: 1000;
+
+    padding-top: 10px;
+}
+.x-button {
+    display: none;
+}
+.show {
+    display: contents;
+}
+
+
 
 @media (max-width: 600px) {
     .project-cards {
-        width: 80vw; /* Fixed container width */
-        overflow-x:scroll; /* Enable horizontal scrolling */
+        width: 80vw; 
+        overflow-x:scroll; 
         
         justify-content: unset;
         

@@ -17,7 +17,8 @@
             ],
             "images": [
                 "/images/midnightcrammenu.png"
-            ]
+            ],
+            "embed": "https://youtube.com/embed/Pntto975ACM"
 
         },
 
@@ -51,8 +52,13 @@
                         "Learned HTML and CSS through online resources and experimentation with little previous experience."
                     ],
 
-            "paragraphs": ["During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform."],
-            "images": ["/images/homepagePic.png"]
+            "paragraphs": ["During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform.",
+        "During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform.",
+    "During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform.",
+"During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform."],
+            "images": ["/images/homepagePic.png",
+            "/images/homepagePic.png",
+        "/images/codePic.png"]
             
         },
         {
