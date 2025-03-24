@@ -3,6 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Image from "next/image";
 import React from "react";
+import { ViewportBoundary } from "next/dist/lib/metadata/metadata-boundary";
 
 const Description = ({project}) => {
 
@@ -43,6 +44,7 @@ const Description = ({project}) => {
                 <Slide   className={styles.imageSlideshow}
                     duration={3000}
                     transitionDuration={100} 
+                    
                     arrows={true} 
                     indicators={true}  >
                     {images.slice(1).map((image, index) => (

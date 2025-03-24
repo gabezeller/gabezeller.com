@@ -79,7 +79,7 @@ export default function Projects() {
                 PROJECTS
             </h2>
 
-            <Description project={projects[0]} />
+            <Description project={projects[2]} />
 
 
             <div className="project-section software">
