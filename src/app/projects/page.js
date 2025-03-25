@@ -35,7 +35,7 @@ export default function Projects() {
         console.log("handling project click...");
         //console.log(project);
         
-        if (project.bullets != null) {
+        if (project.bullets.length != 0) {
 
             console.log("setting curr project... (should trigger useEffect)");
             setCurrProject(project);
