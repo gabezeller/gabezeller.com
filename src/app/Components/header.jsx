@@ -3,8 +3,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-// import { Linkedin, LogoGithub } from '@geist/icons';
-// import { Github, Linkedin } from '@geist-ui/icons';
 import { LuLinkedin, LuGithub  } from "react-icons/lu";
 import "./header.css";
 

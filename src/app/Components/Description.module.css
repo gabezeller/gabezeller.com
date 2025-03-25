@@ -19,7 +19,6 @@
     scrollbar-width: thin;
     
     
-    /* scrollbar-arrow-color: rgba(0, 0, 0, 0); */
     
 }
 .mainContent {
@@ -49,8 +48,7 @@
     margin: 20px 0px;
 }
 .imageSlideshow {
-    /* width: 40%;
-    border: solid purple 1px; */
+
     
 }
 .imageSlide {
@@ -128,32 +126,12 @@
         float: none;
     }
     .projectImage {
-        /* width: 90vw; */
         width: auto;
         max-height: 80vh;
        
 
         
     }
-    /* .title {
-        font-size: 40px;
-        
-    }
-    .skills {
-        font-size: 30px;
-    }
-    .bullets {
-        list-style:disc;
-        list-style-position:outside;
-    
-        padding-left: 1.5em;
-    }
-    .bullet {
-        
-        font-size: 24px;
-    }
-    .paragraph {
-        font-size: 24px;
-    } */
+
 }
 
