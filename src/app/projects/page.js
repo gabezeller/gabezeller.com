@@ -44,8 +44,10 @@ export default function Projects() {
             console.log("setting curr project... (should trigger useEffect)");
             setCurrProject(project);
             setRenderingDescription(true);
+        } else {
+            window.open(project.link, "_blank");
         }
-        // @TODO: add link handling for external html page (illinoisCrime)
+        
         
 
     }
@@ -63,6 +65,11 @@ export default function Projects() {
 
         }
     }
+
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+      }
 
     useEffect(() => {
         console.log("reached currProject useEffect...");
@@ -106,6 +113,8 @@ export default function Projects() {
     
     return (
         <div className="projects">
+
+ 
 
             {currProject === null ? null : (
                         <div className={`descriptionContainer ${descriptionOpen ? "show" : ""}`}>
