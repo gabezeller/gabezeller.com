@@ -45,7 +45,7 @@ export default function Projects() {
             setCurrProject(project);
             setRenderingDescription(true);
         } else {
-            window.open(project.link, "_blank");
+            openInNewTab(project.link);
         }
         
         
