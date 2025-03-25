@@ -40,6 +40,9 @@
 
     justify-content: center;
 
+    /* overflow: hidden;
+    overflow-x: scroll; */
+
     max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
@@ -95,20 +98,49 @@
     transform: scale(1.05);
 }
 .description {
-    position: fixed;
+    /* display: none; */
+    /* position: fixed;
     top: 92px;
-    left: 0;
+    left: 0; */
     height: 100%;
     width: 100%; 
-    z-index: 1000;
+    /* z-index: 1000; */
 
     padding-top: 10px;
 }
 .x-button {
-    display: none;
+    /* display: none; */
+    position:absolute;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    
+    /* left: calc(80vw - 20px); */
+    top: 10px;
+    right: 30px;
+    /* top: 20px; */
+    z-index: 2000;
 }
-.show {
-    display: contents;
+.descriptionContainer.show {
+    display: block;
+
+}
+.descriptionContainer {
+    display: none;
+    position: fixed;
+
+    top: 20px;
+ 
+    
+    z-index: 3000;
+
+
+    /* left: 0; */
+    /* height: 100%;
+    width: 100%;  */
+    /* background-color: darkred; */
+    /* transform: translateX(170%); */
+    /* transition: transform 0.3s ease-in-out;  */
+ 
 }
 
 
@@ -116,7 +148,8 @@
 @media (max-width: 600px) {
     .project-cards {
         width: 80vw; 
-        overflow-x:scroll; 
+
+        overflow-x: scroll; 
         
         justify-content: unset;
         
@@ -126,12 +159,12 @@
 
         scrollbar-color: white rgba(0, 0, 0, 0);
         scrollbar-width: thin;
-        scrollbar-arrow-color: rgba(0, 0, 0, 0);
+        
         
     }
    
     .project-card {
-        display: inline-block;
+        display: block;
         width: 240px;
          
         

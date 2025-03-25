@@ -8,6 +8,7 @@ import { ViewportBoundary } from "next/dist/lib/metadata/metadata-boundary";
 const Description = ({project}) => {
 
     const {title, category, skills, bullets, paragraphs, images, embed} = project;
+    console.log(project);
 
   
     // Project Title | skills

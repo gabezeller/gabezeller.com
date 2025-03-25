@@ -4,6 +4,8 @@
     color: white;
 
     width: 80vw;
+    height: 95vh;
+    overflow: hidden;
     padding: 25px;
 
     border-radius: 20px;
@@ -11,6 +13,14 @@
     border-style: ridge;
 
     transition: all 0.1s ease-in;
+
+    overflow-y: scroll;
+    scrollbar-color: white rgba(0, 0, 0, 0);
+    scrollbar-width: thin;
+    
+    
+    /* scrollbar-arrow-color: rgba(0, 0, 0, 0); */
+    
 }
 .mainContent {
     display: flow-root;
