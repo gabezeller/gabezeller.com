@@ -59,6 +59,7 @@
     position: relative;
 
     transition: all 0.1s ease-in;
+    cursor: pointer;
 
 }
 .project-image {
@@ -107,6 +108,7 @@
     /* z-index: 1000; */
 
     padding-top: 10px;
+
 }
 .x-button {
     /* display: none; */
@@ -122,24 +124,22 @@
 }
 .descriptionContainer.show {
     display: block;
+    transform: translateY(0);
 
 }
 .descriptionContainer {
-    display: none;
+    display: flex;
     position: fixed;
 
     top: 20px;
  
     
     z-index: 3000;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease-in-out;
 
 
-    /* left: 0; */
-    /* height: 100%;
-    width: 100%;  */
-    /* background-color: darkred; */
-    /* transform: translateX(170%); */
-    /* transition: transform 0.3s ease-in-out;  */
+  
  
 }
 
@@ -152,6 +152,7 @@
         overflow-x: scroll; 
         
         justify-content: unset;
+        /* overflow: hidden; */
         
         
 
@@ -164,8 +165,10 @@
     }
    
     .project-card {
-        display: block;
+        display: inline-block;
         width: 240px;
+        /* flex: 0 0 auto; */
+        flex-shrink: 0;
          
         
     }

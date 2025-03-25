@@ -13,6 +13,12 @@ export default function Projects() {
     const [currProject, setCurrProject] = useState(null);
     const [renderingDescription, setRenderingDescription] = useState(false);
 
+    const placeholderProject = {"title":"Title", "category":"Category", "skills":"Skills", "bullets":[], "paragraphs":[],
+        "images":[], "embed":"Embed"
+    };
+    //     const {title, category, skills, bullets, paragraphs, images, embed} = project;
+    // '{"name": "John", "age": 30}';
+
     // Read json
     const projects = data.projects;
 
@@ -53,7 +59,7 @@ export default function Projects() {
         if (descriptionOpen) {
             document.body.style.overflow = "";
             setDescriptionOpen(false);
-            setCurrProject(null);
+            setCurrProject(placeholderProject);
         } else {
             document.body.style.overflow = "hidden";
             setDescriptionOpen(true);
@@ -87,15 +93,16 @@ export default function Projects() {
 
     // Make render project card function
     const renderProject = (project) => {
-        const {title, skills, images, bullets} = project;
+        const {title, skills, images} = project;
         
         return (
 
             // Change to pass only project title? 
             // This would require importing json again and querying
             // Seems inefficient
+            
+                 // On click, if description is open, do nothing, else open description
 
-                // On click, if description is open, do nothing, else open description
                 <div key={title} className="project-card" onClick={() => handleProjectClick(project)}>
                     <Image className="project-image" alt={title} src={images[0]} width={"300"} height={"200"} />
 
@@ -105,16 +112,13 @@ export default function Projects() {
                     </div>       
                     
                 </div>
-            
+               
         )
     }
     
     return (
         <div className="projects">
 
-
-            {/* @TODO: Change to one Description component that takes props based on click */}
-            {/* <Description project={projects[2]} /> */}
             {currProject === null ? null : (
                         <div className={`descriptionContainer ${descriptionOpen ? "show" : ""}`}>
                             <button className="x-button" onClick={toggleProjectDescription}>x</button> 
