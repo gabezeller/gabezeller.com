@@ -34,12 +34,12 @@ export default function AboutMe() {
                 <h3 className={styles.sectionTitle}>
                     Education
                 </h3>
-                <div className={sectionParagraphs}>
+                <div className={styles.sectionParagraphs}>
                     <p>
                     I am a current Senior at the University of Illinois Urbana-Champaign pursuing a degree in Geography & Geographic Information 
                     Science with a minor in Computer Science.
                     </p>
-                    <h4 className={sectionSubtitle}>
+                    <h4 className={styles.sectionSubtitle}>
                         Relevant Coursework
                     </h4>
                     <ul className={styles.coursework}>
@@ -54,8 +54,8 @@ export default function AboutMe() {
                 <h3 className={styles.sectionTitle}>
                     Extracurricular
                 </h3>
-                <div className={sectionParagraphs}>
-                    <h4 className={sectionSubtitle}>
+                <div className={styles.sectionParagraphs}>
+                    <h4 className={styles.sectionSubtitle}>
                         Triangle Fraternity
                     </h4>
                     <p>
@@ -72,7 +72,7 @@ export default function AboutMe() {
                    </p>
 
 
-                    <h4 className={sectionSubtitle}>
+                    <h4 className={styles.sectionSubtitle}>
                         Project Code
                     </h4>
 
@@ -97,8 +97,8 @@ export default function AboutMe() {
                 <h3 className={styles.sectionTitle}>
                     Work Experience
                 </h3>
-                <div className={sectionParagraphs}>
-                    <h4 className={sectionSubtitle}>
+                <div className={styles.sectionParagraphs}>
+                    <h4 className={styles.sectionSubtitle}>
                         GIS Intern
                     </h4>
                     <p>
@@ -116,7 +116,7 @@ export default function AboutMe() {
                 <h3 className={styles.sectionTitle}>
                     Personal
                 </h3>
-                <div className={sectionParagraphs}>
+                <div className={styles.sectionParagraphs}>
                     <p>
                     I am a lover of live music, and I frequently attend local shows both in my hometown of Peoria and in the 
                     Champaign-Urbana area. I especially enjoy it when there is a mosh pit! In general, I enjoy most music, 
