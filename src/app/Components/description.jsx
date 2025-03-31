@@ -16,16 +16,7 @@ const Description = ({project}) => {
     // Images | Paragraphs
    
     
-  
-    // const renderImage = (path, index) => {
-        
-    //     <div className={styles.imageSlide} key={index}>
-    //         {/* path.includes("mp4") ? () : () */}
-    //             <Image className={styles.projectImage} src={path} alt={title} width="550" height="400" />
 
-        
-    //     </div>
-    // }
 
 
     return (

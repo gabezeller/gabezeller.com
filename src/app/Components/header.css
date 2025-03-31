@@ -33,7 +33,7 @@
     font-weight: bold;
     
 
-    margin: 0px 16px;
+    margin: 0px 0px;
 }
 .navbar {
     display: flex;
@@ -63,7 +63,6 @@
 
 }
 .button:hover {
-    /* transform: scale(1.05); */
     color: red;
 }
 .icon {
@@ -76,7 +75,6 @@
     transition: color 0.3s ease
 }
 .icon:hover {
-    /* transform: scale(1.05); */
     color: red;
 }
 
@@ -132,8 +130,35 @@
 
     .hamburger {
         display: block;
-        margin-right: 14px;
+
+        width: 30px;
+        height: 22px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
+
+    .hamburger span {
+        display: block;
+        background-color: white;
+        width: 30px;
+        height: 3px;
+
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .hamburger-line.one.open {
+        transform: translateY(10px) rotate(45deg);
+    }
+    .hamburger-line.two.open {
+        opacity: 0;
+    }
+    .hamburger-line.three.open {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+
+
 
     
 
@@ -144,7 +169,7 @@
         justify-content: unset;
         align-items: center;
 
-        top: 92px;
+        top: 112px;
         left: 0;
         height: 100%;
         width: 100%; 

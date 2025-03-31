@@ -28,13 +28,16 @@ const Header = () => {
                 <div className="title">
                     <Link href={"/"} onClick={menuOpen ? toggleMenu : () => {}}><h1 className="title-text">Gabe Zeller</h1></Link>
                 </div>
-                <button className='hamburger' onClick={toggleMenu}>
-                    ☰
+                <button className="hamburger" onClick={toggleMenu}>
+                    {/* ☰ */}
+                    <span className={`hamburger-line one ${menuOpen ? "open" : ""}`}></span>
+                    <span className={`hamburger-line two ${menuOpen ? "open" : ""}`}></span>
+                    <span className={`hamburger-line three ${menuOpen ? "open" : ""}`}></span>
                 </button>
                 <nav className={`navbar ${menuOpen ? "show" : ""}`}>
                     <ul className="navlist">
                         <li className="button projects-button"><Link href={"/projects"} onClick={menuOpen ? toggleMenu : () => {}}>Projects</Link></li>
-                        {/* <li className="button aboutme-button">About Me</li> */}
+                        <li className="button aboutme-button"><Link href={"/aboutme"} onClick={menuOpen ? toggleMenu : () => {}}>About Me</Link></li>
                         <li>                        
                             <Link href="https://www.linkedin.com/in/gabe-zeller-987355217/" onClick={menuOpen ? toggleMenu : () => {}}>
                                 <LuLinkedin className="icon"/>
