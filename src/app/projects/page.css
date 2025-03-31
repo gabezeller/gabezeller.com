@@ -173,4 +173,7 @@
     .category {
         font-size: 30px;
     }
+    .descriptionContainer {
+        top: 0px;
+    }
 }

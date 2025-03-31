@@ -17,7 +17,15 @@ const Description = ({project}) => {
    
     
   
- 
+    // const renderImage = (path, index) => {
+        
+    //     <div className={styles.imageSlide} key={index}>
+    //         {/* path.includes("mp4") ? () : () */}
+    //             <Image className={styles.projectImage} src={path} alt={title} width="550" height="400" />
+
+        
+    //     </div>
+    // }
 
 
     return (
@@ -50,7 +58,17 @@ const Description = ({project}) => {
                     indicators={true}  >
                     {images.slice(1).map((image, index) => (
                         <div className={styles.imageSlide} key={index}>
-                            <Image  className={styles.projectImage} src={image} alt={title} width="550" height="400" />
+                            {image.includes("MP4") ? // render video if contains mp4, else image
+                            (
+                                <video className={styles.projectImage} width="320" height="240" controls autoPlay>
+                                    <source src={image} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                              </video>
+                            ) : 
+                            (
+                                <Image className={styles.projectImage} src={image} alt={title} width="550" height="400" />
+
+                            )}
                         </div>
 
                             ))}

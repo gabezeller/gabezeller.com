@@ -95,7 +95,8 @@
 @media (max-width: 600px) {
     .description {
         width: 100vw;
-        border: none;
+        height: 100vh;
+        /* border: none; */
         border-radius: 0px;
     }
     .mainContent {

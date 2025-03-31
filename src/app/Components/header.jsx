@@ -34,7 +34,7 @@ const Header = () => {
                 <nav className={`navbar ${menuOpen ? "show" : ""}`}>
                     <ul className="navlist">
                         <li className="button projects-button"><Link href={"/projects"} onClick={menuOpen ? toggleMenu : () => {}}>Projects</Link></li>
-                        <li className="button aboutme-button">About Me</li>
+                        {/* <li className="button aboutme-button">About Me</li> */}
                         <li>                        
                             <Link href="https://www.linkedin.com/in/gabe-zeller-987355217/" onClick={menuOpen ? toggleMenu : () => {}}>
                                 <LuLinkedin className="icon"/>
