@@ -1,4 +1,9 @@
+"use client";
+
 import styles from "./AboutMe.module.css";
+import Image from "next/image";
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css';
 
 export default function AboutMe() {
 
@@ -14,6 +19,12 @@ export default function AboutMe() {
         "ggis489 - Programming for GIS (R) *in progress"
     ];
 
+    const images = [
+        "/images/floatpic.jpg",
+        "/images/NHBmammothskating.jpg",
+        "/images/QuadPicture.jpg"
+    ];
+
     
 
     return (
@@ -25,7 +36,7 @@ export default function AboutMe() {
         <div className={styles.intro}>
             Hi, I&apos;m Gabe Zeller, a Senior STEM student at the University of Illinois at Urbana-Champaign. I have a passion 
             for programming and software development, an academic background 
-            in Computer Science and Geographic Information Science, and leadership experience as a 2-time elected executive 
+            in Geographic Information Science and Computer Science, and leadership experience as a 2-time elected executive 
             board member of a STEM Fraternity.
         </div>
 
@@ -47,6 +58,7 @@ export default function AboutMe() {
                         {coursework.map((course, index) => (<li className={styles.course} key={index}>{course}</li>))}
 
                     </ul>
+                    <Image className={styles.image} src="/images/careerfairpicture.jpg" alt="Me and a friend at the Grainger career fair" width="400" height="400" />
                 </div>
             </div>
 
@@ -64,6 +76,8 @@ export default function AboutMe() {
                     served two terms as Social Director, an elected executive board position responsible for planning 
                     social events for the chapter.
                     </p>
+
+                    <Image className={styles.image} src="/images/triangleconventionpic.jpg" alt="Me at the Triangle National Convention" width="400" height="400" />
                     <p>
                     In this position, I managed a $10,000 budget, led a team of 7 social coordinators, and focused 
                     on the overall success of the chapter in addition to my specific duties. The work was fulfilling, 
@@ -82,6 +96,8 @@ export default function AboutMe() {
                         for students to buy and sell academic materials. So far, we have developed the front-end
                         and now we are developing the back-end. 
                     </p>
+
+                    <Image className={styles.image} src="/images/projectcodepresenting.jpg" alt="Me presenting end of semester Project Code project progress" width="400" height="400" />
 
                     <p>
                         Previously, I worked in a group develop a mobile app to showcase events around the UIUC
@@ -105,7 +121,7 @@ export default function AboutMe() {
                         In the summer of 2024, I worked as GIS Intern for the Peoria County Government IT Department.
                         As a GIS intern, I updated and created various feature layers often used for web applications,
                         worked with the Peoria County Emergency Management Agency to vizualize risk from hazardous 
-                        chemical facilities, and developed or fixed multiple Python scripts to automate vital department work. 
+                        chemical facilities, and developed or fixed multiple Python scripts to automate vital department work.  
                     </p>
 
                     
@@ -123,12 +139,33 @@ export default function AboutMe() {
                     but my favorite is most genres of metal. Currently, I love listening to Slipknot, Deftones, Knocked Loose, and Lorna Shore.
                     </p>
 
+                    <Image className={styles.image} src="/images/knockedloose.JPG" alt="Knocked Loose picture" width="400" height="400" />
+
                     <p>
                     In addition to my love for music, I also find joy in longboarding, especially around campus, exploring fashion through thrifting, 
                     spending time outdoors, and playing pool — even though I am not very good.
                     </p>
                     
                 </div>
+            </div>
+
+            <div className={styles.slideContainer}>
+                <Slide   className={styles.imageSlideshow}
+                    duration={3000}
+                    transitionDuration={100} 
+                    
+                    arrows={true} 
+                    indicators={true}  >
+                    {images.map((image, index) => (
+                        <div className={styles.imageSlide} key={index}>
+
+                                <Image className={styles.image} src={image} alt="General image" width="550" height="400" />
+
+           
+                        </div>
+
+                            ))}
+                </Slide>
             </div>
 
         </div>
