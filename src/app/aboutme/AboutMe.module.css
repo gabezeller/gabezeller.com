@@ -9,6 +9,9 @@
 
     padding-bottom: 40px;
 }
+.topMargin {
+    margin-top: 20px;
+}
 .title {
     font-size: 120px;
     font-weight: 600;
@@ -73,38 +76,7 @@
     grid-area: five;
 }
 
-@media (max-width: 800px) {
-    .aboutContainer {
 
-        display: grid;
-
-        grid-template-columns: auto;
-        
-
-        grid-template: none;
-    
-    }
-
-    .aboutContainer div:nth-child(1) {
-        grid-area:unset;
-    }
-    
-    .aboutContainer div:nth-child(2) {
-        grid-area: unset;
-    }
-    
-    .aboutContainer div:nth-child(3) {
-        grid-area: unset;
-    }
-    
-    .aboutContainer div:nth-child(4) {
-        grid-area: unset;
-    }
-
-    .aboutContainer div:nth-child(5) {
-        grid-area: unset;
-    }
-}
 
 .sectionTitle {
     font-size: 2rem;
@@ -128,12 +100,7 @@
     font-size: 1.13rem;
     
 }
-.image {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
+
 .coursework {
     list-style-position: outside;
     list-style: disc;
@@ -157,16 +124,23 @@
     margin-left: auto;
     margin-right: auto;
 
+    margin-top: 20px;
+
     /* margin-top: calc(50% - ); */
+    
 
     max-height: 500px;
     width: auto;
 }
 .slideContainer {
-    width: 50%;
+    max-width: 45vw;
     min-width: 400px;
 
-    border: solid white 1px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    /* border: solid white 1px; */
     /* margin-left: auto;
     margin-right: auto; */
 
@@ -177,5 +151,59 @@
 
     margin-bottom: 20px; */
     
+}
+
+@media (max-width: 800px) {
+    .aboutContainer {
+
+        
+
+        grid-template-columns: auto;
+        
+
+        grid-template: none;
+        /* padding: 0 10px; */
+
+
+    
+    }
+    .section {
+        max-width:unset;
+        min-width: unset;
+        width: 90vw;
+
+       
+    }
+    .intro {
+        width: 80vw;
+    }
+    .image {
+        width: 80vw;
+        height: auto;
+        padding: 0;
+    }
+
+    .aboutContainer div:nth-child(1) {
+        grid-area:unset;
+    }
+    
+    .aboutContainer div:nth-child(2) {
+        grid-area: unset;
+    }
+    
+    .aboutContainer div:nth-child(3) {
+        grid-area: unset;
+    }
+    
+    .aboutContainer div:nth-child(4) {
+        grid-area: unset;
+    }
+
+    .aboutContainer div:nth-child(5) {
+        grid-area: unset;
+    }
+    .title {
+        font-size: 60px;
+    }
 }
 

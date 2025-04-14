@@ -78,11 +78,17 @@ export default function AboutMe() {
                     </p>
 
                     <Image className={styles.image} src="/images/triangleconventionpic.jpg" alt="Me at the Triangle National Convention" width="400" height="400" />
-                    <p>
+                    <p className={styles.topMargin}>
                     In this position, I managed a $10,000 budget, led a team of 7 social coordinators, and focused 
                     on the overall success of the chapter in addition to my specific duties. The work was fulfilling, 
                     and I even introduced new events for my chapter. The most exciting was a live music house show where
                      we raised ~$900 for RACES, a local charity that provides counseling and support for victims of sexual assault.
+                   </p>
+
+                   <p className={styles.topMargin}>
+                    One exciting fact about the Illinois Chapter of Triangle is that we were voted as the 2025 
+                    best fraternity on campus via the yearly Best of CU polling of the communitiy&apos;s favorite things
+                    done by the Daily Illini, our local newspaper. 
                    </p>
 
 
@@ -99,7 +105,7 @@ export default function AboutMe() {
 
                     <Image className={styles.image} src="/images/projectcodepresenting.jpg" alt="Me presenting end of semester Project Code project progress" width="400" height="400" />
 
-                    <p>
+                    <p className={styles.topMargin}>
                         Previously, I worked in a group develop a mobile app to showcase events around the UIUC
                         campus. The app, Illini Happenings, was never pushed to completion by the project manager,
                         but it was still a fun learning experience. More detailed information can be found on the projects page.
@@ -141,7 +147,7 @@ export default function AboutMe() {
 
                     <Image className={styles.image} src="/images/knockedloose.JPG" alt="Knocked Loose picture" width="400" height="400" />
 
-                    <p>
+                    <p className={styles.topMargin}>
                     In addition to my love for music, I also find joy in longboarding, especially around campus, exploring fashion through thrifting, 
                     spending time outdoors, and playing pool — even though I am not very good.
                     </p>
