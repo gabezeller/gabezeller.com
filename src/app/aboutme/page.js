@@ -106,7 +106,7 @@ export default function AboutMe() {
                     <Image className={styles.image} src="/images/projectcodepresenting.jpg" alt="Me presenting end of semester Project Code project progress" width="400" height="400" />
 
                     <p className={styles.topMargin}>
-                        Previously, I worked in a group develop a mobile app to showcase events around the UIUC
+                        Previously, I worked in a group developing a mobile app to showcase events around the UIUC
                         campus. The app, Illini Happenings, was never pushed to completion by the project manager,
                         but it was still a fun learning experience. More detailed information can be found on the projects page.
                     </p>

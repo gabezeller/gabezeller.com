@@ -38,14 +38,14 @@
                 "This experience also marked my initial encounter with a cloud NoSQL database—Google's Cloud Firestore. Integrating this with the front-end was exciting. For the home screen, I handled database integration by querying for current events and ensuring smooth navigation between event listings and their details. On the input screen, I focused on storing user-generated data, such as event titles and dates, creating event documents, and uploading them to the database."
             ],
             "images" : [
-                "/images/HomescreenCrop.png",
-                "/images/HomeScreen.png",
-                "/images/InputScreen.png",
+                "/images/HomescreenCrop.PNG",
+                "/images/HomeScreen.PNG",
+                "/images/InputScreen.PNG",
                 "/images/Demo.MP4"
             ]
         },
         {
-            "title": "Portfolio Website",
+            "title": "Portfolio Website (Old)",
             "category": "Software",
             "skills": "HTML, CSS",
             "bullets": ["Designed and developed a portfolio website to showcase projects and personal information.",
@@ -53,10 +53,7 @@
                         "Learned HTML and CSS through online resources and experimentation with little previous experience."
                     ],
 
-            "paragraphs": ["During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform.",
-        "During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform.",
-    "During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform.",
-"During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website you are currently visiting was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform."],
+            "paragraphs": ["During the summer of 2023, I dedicated my free time to learning HTML and CSS through online resources. This website, like the new version you are currently visiting, was created by me with the purpose of showcasing my projects and providing personal information. I utilized FreeCodeCamp.org to gain initial knowledge in HTML and CSS and continued learning through practical application and experimentation. Formatting the page content to my preferences proved to be a challenging yet gratifying task. I thoroughly enjoyed the design process and ensuring that visitors could learn more about me through this platform."],
             "images": ["/images/homepagePic.png",
             "/images/homepagePic.png",
         "/images/codePic.png"]

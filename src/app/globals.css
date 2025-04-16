@@ -23,3 +23,9 @@ body {
 html {
   /* overflow-y: scroll; */
 }
+main {
+  background-image: url("/images/redbackground.jpg");
+  background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
+}

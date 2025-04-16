@@ -1,9 +1,9 @@
 .AboutMe {
-    background-image: url("/images/redbackground.jpg");
+    /* background-image: url("/images/redbackground.jpg");
     
     background-repeat: none;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover; */
 
     color: white;
 
@@ -139,17 +139,6 @@
     margin-left: auto;
     margin-right: auto;
 
-
-    /* border: solid white 1px; */
-    /* margin-left: auto;
-    margin-right: auto; */
-
-   
-/*     
-    float: left;
-    margin-right: 20px;
-
-    margin-bottom: 20px; */
     
 }
 
@@ -205,5 +194,15 @@
     .title {
         font-size: 60px;
     }
+    .slideContainer {
+        max-width: 80vw;
+        /* min-width: 400px; */
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        
+    }
+    
 }
 
