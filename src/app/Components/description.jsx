@@ -49,9 +49,9 @@ const Description = ({project}) => {
                     indicators={true}  >
                     {images.slice(1).map((image, index) => (
                         <div className={styles.imageSlide} key={index}>
-                            {image.includes("MP4") ? // render video if contains mp4, else image
+                            {image.includes("MP4") | image.includes("mp4") ? // render video if contains mp4, else image
                             (
-                                <video className={styles.projectImage} width="320" height="240" controls autoPlay>
+                                <video className={styles.projectImage} width="320" height="240" controls>
                                     <source src={image} type="video/mp4" />
                                     Your browser does not support the video tag.
                               </video>
