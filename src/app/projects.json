@@ -38,9 +38,9 @@
                 "This experience also marked my initial encounter with a cloud NoSQL database—Google's Cloud Firestore. Integrating this with the front-end was exciting. For the home screen, I handled database integration by querying for current events and ensuring smooth navigation between event listings and their details. On the input screen, I focused on storing user-generated data, such as event titles and dates, creating event documents, and uploading them to the database."
             ],
             "images" : [
-                "/images/HomescreenCrop.png",
-                "/images/HomeScreen.png",
-                "/images/InputScreen.png",
+                "/images/HomescreenCrop.PNG",
+                "/images/HomeScreen.PNG",
+                "/images/InputScreen.PNG",
                 "/images/Demo.MP4"
             ]
         },
