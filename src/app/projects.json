@@ -1,5 +1,26 @@
 {
     "projects": [
+        {
+            "title": "Monkey Business (Hackathon Demo)",
+            "category": "Software",
+            "skills": "Game Development, Godot Engine, GDScript",
+            "bullets":["Quickly learned the fundamentals of the Godot game engine and GDScript, enabling full game development of Monkey Business within a ~36-hour hackathon window.",
+                    "Implemented core gameplay mechanics, including player movement and interactive NPC behavior, with directional sprite animations.",
+                    "Designed and programmed a state-based dialogue system featuring animated typing effects, along with writing original in-game NPC dialogue."
+            ],
+            "paragraphs":["In the Spring 2025 semester at UIUC, I took part in HackIllinois—my first-ever hackathon. While the event offered several tracks like autonomous vehicles and developer tools, my team and I elected for something a little more offbeat in the general track: a video game set in a chaotic office run by monkeys. And so, the first demo of Monkey Business was born—an isometric RPG where you must escape the workplace by persuading your monkey coworkers to leave with you and completing puzzles.",
+        "Like all projects at the hackathon, Monkey Business came together in just ~36 hours. What started as an ambitious project was quickly refined into something we could build in that short window. Not only was the time constraint enough of a challenge, we decided to use the Godot game engine—a tool none of us had touched before. In a day and a half, we went from concept to code to a playable demo, all while learning a brand-new engine and scripting language on the fly.",
+        "While our final submission was missing a few key features due to some last-minute bugs, I came away from the experience with exactly what I was hoping for: a chance to learn, build something fun, and enjoy the process. Since then, our team has committed to continuing development on Monkey Business, this time with a completely reimagined gameplay experience.",
+        "HACKATHON TEAM: Apurv Singdeo, Raul Higareda, Aryan Mashruwala, and Me :)"
+        ],
+        "images":["/images/monkeybusiness-1.png",
+        "/images/monkeybusiness-1.png",
+        "/images/monkeybusiness-2.png",
+        "/images/monkeybusiness-3.png",
+        "/images/monkeybusiness-4.png",
+        "/images/MonkeyBusinessGameDemo.mp4"
+    ]
+        },
         { "title": "Midnight Cram Horror Game",
             "category": "Software",
             "skills": "Game Development, Unreal Engine, Blueprints",
