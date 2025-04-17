@@ -40,7 +40,6 @@
 .aboutContainer {
 
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(45vw, 1fr)); */
     
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -53,7 +52,6 @@
     "five four";
 
 
-    /* grid-auto-flow: dense; */
 
 }
 .aboutContainer div:nth-child(1) {
@@ -110,14 +108,7 @@
 
     
 }
-.imageSlide {
-    
-    margin-left: auto;
-    margin-right: auto;
-      
-     
-    
-}
+
 
 
 .image {
@@ -126,20 +117,31 @@
 
     margin-top: 20px;
 
-    /* margin-top: calc(50% - ); */
     
 
-    max-height: 500px;
-    width: auto;
+    width: 40vw;
+    max-width: 450px;
+    height: auto;
+
+
 }
 .slideContainer {
     max-width: 45vw;
-    min-width: 400px;
+    min-width: 40vw;
 
     margin-left: auto;
     margin-right: auto;
-
     
+    
+}
+.imageSlide {
+    
+    
+}
+.imageSlide img {
+    width: 100%;
+    height: auto;
+  
 }
 
 @media (max-width: 800px) {
@@ -151,7 +153,6 @@
         
 
         grid-template: none;
-        /* padding: 0 10px; */
 
 
     
@@ -196,12 +197,14 @@
     }
     .slideContainer {
         width: 80vw;
+        min-width: unset;
+        max-width: unset;
         /* min-width: 400px; */
     
         margin-left: auto;
         margin-right: auto;
     
-        
+       
     }
     
 }
