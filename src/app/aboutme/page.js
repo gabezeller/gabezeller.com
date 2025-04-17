@@ -22,6 +22,7 @@ export default function AboutMe() {
     const images = [
         "/images/floatpic.jpg",
         "/images/NHBmammothskating.jpg",
+        "/images/snowboarding.jpg",
         "/images/QuadPicture.jpg"
     ];
 
@@ -165,7 +166,7 @@ export default function AboutMe() {
                     {images.map((image, index) => (
                         <div className={styles.imageSlide} key={index}>
 
-                                <Image className={styles.image} src={image} alt="General image" width="550" height="400" />
+                                <Image className={styles.image} src={image} alt="General image" width="500" height="500" />
 
            
                         </div>
