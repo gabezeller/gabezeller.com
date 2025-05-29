@@ -46,6 +46,10 @@
 
     animation: 1.5s ease-out 0s 1 slideInFromLeft;
 }
+.icons {
+    
+   
+}
 .resumeicon {
     background-color: white;
     color: black;
@@ -62,10 +66,16 @@
     margin-top: 10px;
 
     animation: 2s ease-out 0s 1 slideInFromLeft;
+
+    margin-left: auto;
+    
 }
 .resumeicon:hover {
     background-color: red;
     
+}
+.resumeicon:active {
+    box-shadow: 0px 0px 0px;
 }
 @media (max-width: 800px) {
     .main {
