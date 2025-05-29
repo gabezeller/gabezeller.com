@@ -20,9 +20,9 @@ export default function Home() {
         <p className="field">Geographic Information Science</p>
         <div className="icons">
             <Link className="resumeicon" href="images/Gabe_Zeller_Resume.pdf">
-                <span>
+                <button >
                   <b>Resume</b>
-                </span>
+                </button>
             </Link>
         
         </div>

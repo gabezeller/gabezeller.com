@@ -95,6 +95,9 @@
 .project-card:hover {
     transform: scale(1.05);
 }
+.project-card:active {
+    transform: scale(0.95);
+}
 .description {
     height: 100%;
     width: 100%; 
@@ -112,6 +115,14 @@
     top: 10px;
     right: 30px;
     z-index: 2000;
+
+    transition: all 0.2s ease;
+}
+.x-button:hover {
+    color: black;
+}
+.x-button:active {
+    font-weight: 400;
 }
 .descriptionContainer.show {
     display: block;
