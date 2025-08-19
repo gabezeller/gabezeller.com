@@ -20,7 +20,22 @@
         "/images/monkeybusiness-4.png",
         "/images/MonkeyBusinessGameDemo.mp4"
     ]
-        },
+        }, {
+            "title":"UIUC E-Commerce Website",
+            "category":"Software",
+            "skills":"React.js, API Development, MongoDB",
+            "bullets": ["Developed responsive front-end components for React.js E-Commerce website and built entire Home Page front-end.",
+        "Built RESTful API functions using Python and FastAPI to interact with a MongoDB Atlas database storing users and products."],
+        "paragraphs":["As a Project Code UIUC member, I joined a new project aiming to build an E-Commerce website for UIUC students to buy and sell academic materials. I built the main landing page using custom React components for the header and item boxes. I also utilized my mobile software development skills and responsive design to ensure a quality UI on mobile platforms.",
+    "Although the backend to this web app was not completed during my undergraduate tenure, I was able to contribute to the RESTful API with GET and PUT functions to interact with the orders, products, and users collections in the MongoDB Atlas database. I built these using Python and FastAPI.",
+"This project is still in development, but I am longer involved due to my graduation from UIUC and, therefore, my leave from Project Code."],
+"images":["/images/ECommerce-Web.png",
+            "/images/ECommerce-Web.png",
+        "/images/ECommerce-Web1.png",
+        "/images/ECommerce-Mobile.png",
+        "/images/ECommerce-Mobile2.png"
+    ] },
+
         { "title": "Midnight Cram Horror Game",
             "category": "Software",
             "skills": "Game Development, Unreal Engine, Blueprints",
