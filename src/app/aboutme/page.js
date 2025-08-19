@@ -11,12 +11,12 @@ export default function AboutMe() {
         "cs374 - Intro to Algorithms and Models of Computation", 
         "cs225 - Data Structures and Algorithms (C++)",
         "cs415 - Game Development (Unreal Engine)",
-        "cs233 - Computer Architecture *in progress",
+        "cs233 - Computer Architecture",
         "ggis480 - Principles of GIScience (Python)",
         "ggis479 - Enterprise GIS",
         "ggis224 - Environmental Data Science (R)",
         "ggis379 - Intro to GISystems",
-        "ggis489 - Programming for GIS (R) *in progress"
+        "ggis489 - Programming for GIS (R)"
     ];
 
     const images = [
@@ -35,7 +35,7 @@ export default function AboutMe() {
         </h2>
 
         <div className={styles.intro}>
-            Hi, I&apos;m Gabe Zeller, a Senior STEM student at the University of Illinois at Urbana-Champaign. I have a passion 
+            Hi, I&apos;m Gabe Zeller, a graduate from the University of Illinois at Urbana-Champaign. I have a passion 
             for programming and software development, an academic background 
             in Geographic Information Science and Computer Science, and leadership experience as a 2-time elected executive 
             board member of a STEM Fraternity.
@@ -48,8 +48,8 @@ export default function AboutMe() {
                 </h3>
                 <div className={styles.sectionParagraphs}>
                     <p>
-                    I am a current Senior at the University of Illinois Urbana-Champaign pursuing a degree in Geography & Geographic Information 
-                    Science with a minor in Computer Science.
+                    I graudated in May 2025 from the University of Illinois Urbana-Champaign with a degree in Geography & Geographic Information 
+                    Science and a minor in Computer Science.
                     </p>
                     <h4 className={styles.sectionSubtitle}>
                         Relevant Coursework
@@ -72,8 +72,8 @@ export default function AboutMe() {
                         Triangle Fraternity
                     </h4>
                     <p>
-                    I actively participate in the Illinois chapter of Triangle Fraternity, a unique organization that 
-                    brings together STEM majors. I have held numerous positions in the Chapter, but most notably I 
+                    During my undergraduate education, I was an active member in the Illinois chapter of Triangle Fraternity, a unique organization that 
+                    brings together STEM majors. I held numerous positions in the Chapter, but most notably I 
                     served two terms as Social Director, an elected executive board position responsible for planning 
                     social events for the chapter.
                     </p>
@@ -98,10 +98,10 @@ export default function AboutMe() {
                     </h4>
 
                     <p>
-                        I am a member of Project Code, an organization that brings together students
-                        to build various coding projects. I am currently on a team builing an e-commerce website
-                        for students to buy and sell academic materials. So far, we have developed the front-end
-                        and now we are developing the back-end. 
+                        I was also a member of Project Code, an organization that brings together students
+                        to build various coding projects. I most recently was on a team builing an e-commerce website
+                        for students to buy and sell academic materials. Before my graduation, we completed front-end Development
+                        and started back-end development. 
                     </p>
 
                     <Image className={styles.image} src="/images/projectcodepresenting.jpg" alt="Me presenting end of semester Project Code project progress" width="400" height="400" />
