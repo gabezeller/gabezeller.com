@@ -123,7 +123,7 @@ export default function Projects() {
                         </div>
             )}
 
-
+            
 
             <h2 className="projects-title">
                 PROJECTS
@@ -152,6 +152,7 @@ export default function Projects() {
 
                 </div>
             </div>
+            
         </div>
 
     );

@@ -1,6 +1,7 @@
 
 .description {
-    background-color: darkred;
+    /* background-color: darkred; */
+    background-color: rgba(0, 0, 0, 0.616);
     color: white;
 
     width: 80vw;
@@ -18,7 +19,8 @@
     scrollbar-color: white rgba(0, 0, 0, 0);
     scrollbar-width: thin;
     
-    
+    transition: filter 0.3s;
+    backdrop-filter: blur(20px);
     
 }
 .mainContent {

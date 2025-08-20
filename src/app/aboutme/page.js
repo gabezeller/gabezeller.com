@@ -42,7 +42,9 @@ export default function AboutMe() {
         </div>
 
         <div className={styles.aboutContainer}>
+            
             <div className={styles.section}>
+                
                 <h3 className={styles.sectionTitle}>
                     Education
                 </h3>
@@ -59,8 +61,10 @@ export default function AboutMe() {
                         {coursework.map((course, index) => (<li className={styles.course} key={index}>{course}</li>))}
 
                     </ul>
+                    </div>
+                    
                     <Image className={styles.image} src="/images/careerfairpicture.jpg" alt="Me and a friend at the Grainger career fair" width="400" height="400" />
-                </div>
+                
             </div>
 
             <div className={styles.section}>

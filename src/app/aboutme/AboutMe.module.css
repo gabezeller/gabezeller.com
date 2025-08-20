@@ -17,6 +17,8 @@
     font-weight: 600;
 
     text-align: center;
+
+    animation: slideDown 0.8s ease;
 }
 .intro {
     font-size: 1.13rem;
@@ -25,6 +27,14 @@
     margin-right: auto;
 
     margin-bottom: 20px;
+
+        padding: 16px;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+    border: solid white 1px;
+    border-style: ridge;
+
+    animation: fadeInUp 0.8s;
 }
 .section {
     max-width: 45vw;
@@ -34,10 +44,18 @@
 
     min-width: 400px;
 
+    margin-bottom: 20px;;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+    border: solid white 1px;
+    border-style: ridge;
 
+    animation: fadeIn 0.8s ease;
 }
 
 .aboutContainer {
+
 
     display: grid;
     
@@ -49,9 +67,9 @@
     "three two"
     "three two"
     "five four"
-    "five four";
+    "five none";
 
-
+    animation: fadeInUp 0.8s ease;
 
 }
 .aboutContainer div:nth-child(1) {
@@ -89,10 +107,24 @@
     margin-top: 20px;
 }
 .sectionParagraphs {
+    
 
 }
 .sectionParagraphs p {
     font-size: 1.13rem;
+
+        
+   
+    
+   
+}
+.bubble {
+     /* padding: 10px; */
+
+    background-color: rgba(0, 0, 0, 0.616);
+    border-radius: 15px;
+    border: solid white 1px;
+    border-style: ridge;
 }
 .course {
     font-size: 1.13rem;
@@ -207,5 +239,20 @@
        
     }
     
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 

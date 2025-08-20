@@ -1,5 +1,5 @@
 .header {
-    background-color: black;
+    background-color: rgba(18, 18, 18, 0.685);
     color: white;
     position: sticky;
     top: 0;
@@ -173,7 +173,7 @@
         left: 0;
         height: 100%;
         width: 100%; 
-        background-color: darkred;
+        background-color: rgb(139, 0, 0);
         transform: translateX(170%); 
         transition: transform 0.3s ease-in-out;
         z-index: 1000;
@@ -182,7 +182,6 @@
       }
     .navlist {
         flex-direction: column;
-        
     }
     .icon {
         margin: 5px;

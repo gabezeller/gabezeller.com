@@ -16,13 +16,6 @@
 */
 
 body {
-  /* color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif; */
-  background-image: url("/images/redbackground.jpg");
-  background-repeat: none;
-  background-attachment: fixed;
-  background-size: cover;
 } 
 @media (max-width: 600px) {
   body {
@@ -30,6 +23,149 @@ body {
     background-size:auto;
   };
 }
+.backdrop {
+  background-color: white;
+  width: 100vw;
+  height: 120vh;
+
+  position: fixed;
+  left: 0;
+  top: 0px;
+  z-index: -1;
+
+  
+  background-color: black;
+  
+  background-repeat: none;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+
+
+.circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6, .circle-7, .circle-8, .circle-9, .circle-10 {
+  position: absolute;
+  border-radius: 50%;
+  
+  z-index: -1;
+
+  filter: blur(50px);
+  
+} 
+
+
+
+
+
+@keyframes pulseGrow {
+  0%   { transform: scale(1); border-radius: 50%; }
+  20%  { transform: scale(1.08); border-radius: 70% 30% 60% 40% / 40% 60% 30% 70%; }
+  50%  { transform: scale(1.25); border-radius: 85% 15% 80% 20% / 20% 80% 15% 85%; }
+  80%  { transform: scale(1.08); border-radius: 60% 40% 70% 30% / 30% 70% 40% 60%; }
+  100% { transform: scale(1); border-radius: 50%; }
+}
+
+@keyframes pulseShrink {
+  0%   { transform: scale(1); border-radius: 50%; }
+  20%  { transform: scale(0.95); border-radius: 30% 70% 40% 60% / 60% 40% 70% 30%; }
+  50%  { transform: scale(0.75); border-radius: 15% 85% 20% 80% / 80% 20% 85% 15%; }
+  80%  { transform: scale(0.95); border-radius: 40% 60% 30% 70% / 70% 30% 60% 40%; }
+  100% { transform: scale(1); border-radius: 50%; }
+}
+
+.circle-1 {
+  width: 400px;
+  height: 400px;
+  left: 10%;
+  top: 0%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseGrow 8s ease-in-out infinite;
+}
+
+.circle-2 {
+  width: 300px;
+  height: 300px;
+  left: 60%;
+  top: 25%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseShrink 7s ease-in-out infinite;
+}
+
+.circle-3 {
+  width: 500px;
+  height: 500px;
+  left: 30%;
+  top: 60%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseGrow 10s ease-in-out infinite;
+}
+
+.circle-4 {
+  width: 350px;
+  height: 350px;
+  left: 75%;
+  top: 70%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseShrink 9s ease-in-out infinite;
+}
+
+.circle-5 {
+  width: 250px;
+  height: 250px;
+  left: 5%;
+  top: 75%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseGrow 6s ease-in-out infinite;
+}
+
+.circle-6 {
+  width: 450px;
+  height: 450px;
+  left: 40%;
+  top: 10%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseShrink 8s ease-in-out infinite;
+}
+
+.circle-7 {
+  width: 450px;
+  height: 450px;
+  left: 80%;
+  top: 10%;
+  background: rgba(255, 0, 0, 0.6); /* Increased alpha for more vibrant red */
+  animation: pulseGrow 8s ease-in-out infinite;
+}
+
+.circle-8 {
+  width: 320px;
+  height: 320px;
+  left: 0%;
+  top: 30%;
+  background: rgba(255, 0, 0, 0.6);
+  animation: pulseShrink 7.5s ease-in-out infinite;
+}
+
+.circle-9 {
+  width: 380px;
+  height: 380px;
+  left: 55%;
+  top: 60%;
+  background: rgba(255, 0, 0, 0.6);
+  animation: pulseGrow 9s ease-in-out infinite;
+}
+
+.circle-10 {
+  width: 270px;
+  height: 270px;
+  left: 70%;
+  top: 40%;
+  background: rgba(255, 0, 0, 0.6);
+  animation: pulseShrink 8.5s ease-in-out infinite;
+}
+
+
+
+
 
 html {
   /* overflow-y: scroll; */
@@ -46,3 +182,10 @@ html {
     background-attachment: scroll;
   }
 } */
+
+@media (max-width: 500px) {
+  .circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6, .circle-7, .circle-8, .circle-9, .circle-10 {
+    width: 160px;
+    height: 160px;
+  }
+}
