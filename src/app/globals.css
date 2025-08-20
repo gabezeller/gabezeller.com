@@ -184,8 +184,29 @@ html {
 } */
 
 @media (max-width: 500px) {
-  .circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6, .circle-7, .circle-8, .circle-9, .circle-10 {
-    width: 160px;
-    height: 160px;
+  @keyframes pulseGrowMobile {
+    0%   { transform: scale(1); border-radius: 50%;}
+    20%  { transform: scale(1.25); border-radius: 90% 10% 80% 20% / 20% 80% 10% 90%; }
+    50%  { transform: scale(1.5); border-radius: 100% 0% 90% 10% / 10% 90% 0% 100%; }
+    80%  { transform: scale(1.25); border-radius: 80% 20% 90% 10% / 10% 90% 20% 80%; }
+    100% { transform: scale(1); border-radius: 50%; }
   }
+
+  @keyframes pulseShrinkMobile {
+    0%   { transform: scale(1); border-radius: 50%; }
+    20%  { transform: scale(0.8); border-radius: 10% 90% 20% 80% / 80% 20% 90% 10%; }
+    50%  { transform: scale(0.6); border-radius: 0% 100% 10% 90% / 90% 10% 100% 0%; }
+    80%  { transform: scale(0.8); border-radius: 20% 80% 10% 90% / 90% 10% 80% 20%; }
+    100% { transform: scale(1); border-radius: 50%; }
+  }
+
+  .circle-1 { width: 90px;  height: 90px;  animation: pulseGrowMobile 5s ease-in-out infinite; }
+  .circle-2 { width: 160px; height: 160px; animation: pulseShrinkMobile 7s ease-in-out infinite; }
+  .circle-3 { width: 140px; height: 140px; animation: pulseGrowMobile 8s ease-in-out infinite; }
+  .circle-4 { width: 90px;  height: 90px;  animation: pulseShrinkMobile 9s ease-in-out infinite; }
+  .circle-5 { width: 100px;  height: 100px;  animation: pulseGrowMobile 6s ease-in-out infinite; }
+  .circle-6 { width: 160px; height: 160px; animation: pulseShrinkMobile 4s ease-in-out infinite; }
+  .circle-7 { width: 100px; height: 100px; animation: pulseGrowMobile 8s ease-in-out infinite; }
+  .circle-8 { width: 100px;  height: 100px;  animation: pulseShrinkMobile 5s ease-in-out infinite; }
+
 }
