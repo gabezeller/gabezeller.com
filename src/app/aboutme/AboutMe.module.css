@@ -48,7 +48,7 @@
     padding: 16px;
     background-color: rgba(0, 0, 0, 0.616);
     border-radius: 15px;
-    border: solid white 0.5px;
+    border: solid white 1px;
     border-style: ridge;
 
     animation: fadeIn 0.8s ease;
