@@ -3,7 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Image from "next/image";
 import React from "react";
-import { ViewportBoundary } from "next/dist/lib/metadata/metadata-boundary";
+// import { ViewportBoundary } from "next/dist/lib/metadata/metadata-boundary";
 
 const Description = ({project}) => {
 

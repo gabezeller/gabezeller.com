@@ -1,5 +1,31 @@
 {
     "projects": [
+                {
+            "title": "CourtRank App (Beta)",
+            "category": "Software",
+            "skills": "App Development, Firebase, GoogleAuth, React-Native",
+            "bullets":["Developed Google Authentication (OAuth 2.0) hook enabling secure sign-in adopted by 43% of users.",
+                    "Implemented robust error handling within all authentication flows to ensure database integrity.",
+                    "Redesigned the app UI in React Native across 6 primary screens and 4 modals, delivering a modern, intuitive UX, and designed the app logo, strengthening brand identity."
+            ],
+            "paragraphs":["Have you ever wanted to settle, once and for all, who’s the best at a sport, drinking game, or any friendly competition? That’s exactly what CourtRank was built for.",
+"CourtRank lets users create and manage leagues for any game they choose. Competitors can join public or private leagues, log matches, and track real-time stats and ELO-based rankings, so there’s never any debate about who sits at the top.",
+"The project began as a simple league tracker for a favorite college game of mine, but after sharing the idea with my friend Anand (AJ) Tekkey, it grew into a full, general-purpose platform. Now, any group of friends or colleagues can track their competitions in one place.",
+"AJ implemented the app’s foundational structure and initial UI. I stepped in to stabilize key features and elevate the user experience. I resolved a range of bugs, like with user registration, made several important tweaks, and improved error handling to ensure clean, consistent data within our NoSQL database. I also built a useGoogleAuth hook, enabling seamless Google sign-in, which now powers the majority of user registrations. My largest contribution was a full redesign of the UI, transforming the app into a modern, intuitive experience complete with a custom logo.",
+"CourtRank is currently in beta as a web app with 80+ users. My current focus is preparing it to scale. I’m developing a custom hook to read match data from Cloud Firestore more cost-effectively with pagination, caching, and smarter logic. This will reduce database reads by over 80% while keeping the experience fast and up to date.",
+"Stay tuned for more improvements!"
+        ],
+        "images":["/images/courtrank0.png",
+        "/images/courtrank1.png",
+        "/images/courtrank2.png",
+        "/images/courtrank3.png",
+        "/images/courtrank4.png",
+        "/images/courtrank5.png",
+        "/images/courtrank6.png",
+        "/images/courtrank7.png",
+        "/images/courtrank8.png"
+    ]
+        },
         {
             "title": "Monkey Business (Hackathon Demo)",
             "category": "Software",
