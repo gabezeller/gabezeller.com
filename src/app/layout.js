@@ -1,10 +1,27 @@
-import {  Handjet } from "next/font/google";
+import {  Handjet, Geist_Mono, Geist, Google_Sans_Code, Metal_Mania, VT323} from "next/font/google";
 import "./globals.css";
 import Header from "./Components/header"
 import { Fragment } from "react";
 
+// const VT323Font = VT323({
+//   variable: "--font-vt323",
+//   subsets: ["latin"],
+//   weight: ['400'],
+// });
+
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
+
+// const metalMania = Metal_Mania({
+//   variable: "--font-metal-mania",
+//   subsets: ["latin"],
+//   weight: ['400'],
+// });
+
+// const googleSansCode = Google_Sans_Code({
+//   variable: "--font-google-sans-code",
 //   subsets: ["latin"],
 // });
 
