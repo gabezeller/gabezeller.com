@@ -22,8 +22,8 @@ export default function AboutMe() {
     const images = [
               "/images/copper.jpg",
   
-        "/images/bobgrad.jpg",
-        "/images/shrek2grad.jpg",
+        // "/images/bobgrad.jpg",
+        // "/images/shrek2grad.jpg",
   
         "/images/floatpic.jpg",
         "/images/NHBmammothskating.jpg",
