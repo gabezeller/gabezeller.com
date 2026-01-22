@@ -20,6 +20,11 @@ export default function AboutMe() {
     ];
 
     const images = [
+              "/images/copper.jpg",
+  
+        "/images/bobgrad.jpg",
+        "/images/shrek2grad.jpg",
+  
         "/images/floatpic.jpg",
         "/images/NHBmammothskating.jpg",
         "/images/snowboarding.jpg",
@@ -35,7 +40,7 @@ export default function AboutMe() {
         </h2>
 
         <div className={styles.intro}>
-            Hi, I&apos;m Gabe Zeller, a graduate from the University of Illinois at Urbana-Champaign. I have a passion 
+            Hi, I&apos;m Gabe Zeller, a computer science masters student at the University of Illinois Chicago and a graduate from the University of Illinois at Urbana-Champaign. I have a passion 
             for programming and software development, an academic background 
             in Geographic Information Science and Computer Science, and leadership experience as a 2-time elected executive 
             board member of a STEM Fraternity.
@@ -49,10 +54,23 @@ export default function AboutMe() {
                     Education
                 </h3>
                 <div className={styles.sectionParagraphs}>
-                    <p>
-                    I graudated in May 2025 from the University of Illinois Urbana-Champaign with a degree in Geography & Geographic Information 
-                    Science and a minor in Computer Science.
+
+                    <ul className={styles.coursework}>
+                        <li className={styles.educationItem}>University of Illinois Chicago - Master of Science in Computer Science (expected Dec 2027)</li>
+                        <li className={styles.educationItem}>University of Illinois Urbana-Champaign - Bachelor of Science in Geography & Geographic Information Science (May 2025)</li>
+                    </ul>
+                    {/* <p>
+                        Master of science in Computer Science (expected Dec 2027) - University of Illinois Chicago
+            
                     </p>
+                    <p>
+                        Bachelor of science in Geography & Geographic Information Science (May 2025) - University of Illinois Urbana-Champaign
+                    </p> */}
+                    {/* <p >
+                    I graudated in May 2025 from the University of Illinois Urbana-Champaign with a degree in Geography & Geographic Information 
+                    Science and a minor in Computer Science. Now I am pursuing a Master&apos;s in Computer Science at the University of Illinois Chicago,
+                    expected to graduate in December 2027.
+                    </p> */}
                     <h4 className={styles.sectionSubtitle}>
                         Relevant Coursework
                     </h4>
