@@ -14,7 +14,12 @@ const Description = ({project}) => {
     // Project Title | skills
     // Bullets
     // Images | Paragraphs
-   
+
+    // let slideImages = images;
+    // if (embed) {
+    //     slideImages.push(embed);
+    //     console.log("embed added to images array: ", slideImages);
+    // }
     
 
 
@@ -39,7 +44,7 @@ const Description = ({project}) => {
                 <iframe className={styles.embed}
                     src={embed}>
                 </iframe>
-            ) : 
+            ) : (
             <div className={styles.slideContainer}>
                 <Slide   className={styles.imageSlideshow}
                     duration={3000}
@@ -57,15 +62,26 @@ const Description = ({project}) => {
                               </video>
                             ) : 
                             (
+                                // image.includes("embed") ? (
+                                //     <iframe className={styles.embed} src={image} width="550" height="400"></iframe>
+                                // ) : 
+                                // (
                                 <Image className={styles.projectImage} src={image} alt={title} width="550" height="400" />
-
+                                // )
                             )}
                         </div>
 
-                            ))}
+                            ))} 
+
+                    {/* {embed != null ? (
+                <iframe className={styles.embed}
+                    src={embed} width="550" height="400">
+                </iframe>) : null} */}
+
+                        
                 </Slide>
-            </div>
-            }
+            </div> 
+            )}
             <div className={styles.paragraphs}>
                 {paragraphs.map((paragraph, index) => (<p className={styles.paragraph} key={index}>{paragraph}</p>))}
             </div>
