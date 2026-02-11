@@ -1,5 +1,54 @@
 {
     "projects": [
+        {
+"title": "ThryftAI (Hackathon)",
+"skills": "React, Typescript, TailwindCSS, OpenAI",
+"category":"Software",
+
+"bullets": ["Developed a responsive frontend for an AI-driven sustainable fashion platform using React, TypeScript, and TailwindCSS, delivering an intuitive user experience under a 24-hour deadline.",
+
+"Implemented REST API integration logic to retrieve marketplace data and invoke OpenAI-based recommendation services, enabling dynamic outfit suggestions and search functionality.",
+
+"Collaborated cross-functionally to align frontend components with backend API architecture, accelerating feature delivery in a fast-paced team environment."],
+
+"paragraphs":
+[
+"Buying second-hand clothing, or thrifting, is widely considered a more sustainable alternative to fast fashion, which often raises ethical and environmental concerns. While online marketplaces like Depop have made thrifting more accessible, building a cohesive wardrobe still requires time and effort.",
+
+"At UIC SparkHacks 2026, my team and I asked: What if a resale platform used AI to help sellers create listings and help buyers discover pieces that truly match their style and complete full outfits? That question let to the creation of ThryftAI.",
+
+"Features: ThryftAI is an AI-enhanced e-commerce platform for buying and selling second-hand clothing. One key feature is reverse image search. Users can upload a photo of a clothing item they like, and the platform identifies similar items available for sale, helping them quickly find pieces that match their aesthetic.",
+
+"The Outfit Builder allows users to generate complete outfits in two ways: 1. By entering a style prompt (e.g., \"emo\" or \"whimsical\") or 2. By uploading an item they already own and receiving complementary suggestions. This makes it easier to build cohesive outfits and discover pieces that naturally pair together. Users can also save generated outfits for later reference. To simplify selling, the platform automatically generates item descriptions and relevant attributes when a seller uploads images. Sellers can edit these details, but the AI-assisted listing process reduces friction and improves consistency.",
+
+"We structured the project with the frontend and backend maintained in separate repositories, following common full-stack development practices and enabling clearer separation of concerns.", 
+
+"Backend: Two of my partners focused on the backend. It was built using ASP.NET to create a REST API that managed marketplace data and AI-powered features. The application was containerized and deployed to a VPS using Aedify.AI for quick and reliable hosting. We integrated Semantic Kernel to connect OpenAI models to our application logic, enabling intelligent outfit recommendations and automated tagging. Clothing images were stored in AWS S3, and structured data was managed in AWS RDS (PostgreSQL) for scalable cloud storage.",
+
+"Frontend: I primarily worked on the front-end. The frontend was developed using React (TypeScript) with Tailwind CSS and pre-built component libraries to accelerate UI development. In addition to designing responsive views, we implemented asynchronous data-fetching logic to send user inputs (e.g., search queries, style prompts, image uploads) to custom REST endpoints and render AI-generated responses in real time. This integration connected frontend state management with backend AI services, enabling dynamic recommendation and search features while maintaining a smooth, responsive user experience.",
+
+"Although we didn't place in our category, we are very proud of the work we did. It is always fun to code competitively and build a unique project. I look forward to competing in more hackathons.",
+
+"Hackathon partners: Rafael Mejia, Jose Leal, and Link Fulstone"
+],
+
+"images":["/images/thryftailogo.png",
+"/images/thryftai.png",
+"/images/thryftai2.png",
+"/images/thryftai4.png",
+"/images/thryftai5.png",
+"/images/thryftai6.png",
+"/images/thryftai8.png",
+"/images/thryftai13.png",
+"/images/thryftai14.png",
+"/images/thryftai9.png",
+"/images/thryftai10.png",
+"/images/thryftai11.png",
+"/images/thryftai12.png"
+
+]
+
+},
                 {
             "title": "CourtRank App (Beta)",
             "category": "Software",
