@@ -44,7 +44,8 @@
 "/images/thryftai9.png",
 "/images/thryftai10.png",
 "/images/thryftai11.png",
-"/images/thryftai12.png"
+"/images/thryftai12.png",
+"https://www.youtube.com/embed/gScSzJrxYNE?si=wlxkRHNEvZy5yDlB"
 
 ]
 
@@ -127,7 +128,7 @@
 
             ],
             "images": [
-                "/images/midnightcrammenu.png"
+                "/images/midnightcrammenu.png", "https://youtube.com/embed/Pntto975ACM"
             ],
             "embed": "https://youtube.com/embed/Pntto975ACM"
 

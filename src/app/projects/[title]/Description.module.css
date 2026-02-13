@@ -101,16 +101,18 @@
     
 }
 .embed {
-    width: 50%;
+    /* width: 50%;
     min-width: 400px;
-    height: 400px;
-    /* height: 400px;
-    width: 550px;
+    height: 400px; */
+    width: 100%;
+    /* height: auto; */
+
+
     margin-left: auto;
-    margin-right: auto; */
-    float: left; 
+    margin-right: auto;
+    /* float: left; 
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; */
 }
 .paragraphs {
     

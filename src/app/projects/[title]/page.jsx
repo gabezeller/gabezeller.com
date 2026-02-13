@@ -9,6 +9,9 @@ import { useParams } from "next/navigation";
 import data from "../../projects.json";
 import Link from "next/link";
 
+
+
+
 // import { ViewportBoundary } from "next/dist/lib/metadata/metadata-boundary";
 
 export default function Description () {
@@ -18,14 +21,24 @@ export default function Description () {
     // Unpack project data
     const {title, category, skills, bullets, paragraphs, images, embed} = data.projects[params.title];
 
+    // console.log(images);
+    // console.log(typeof(embed));
+
+    // const testarr = images;
+    // console.log('RENDER COUNT:', Math.random(), images.length);
+    // console.log(testarr);
+
+    // if (embed) {
+    //     testarr.push("test2");
+    // }
+    // console.log(testarr);
+
     // console.log("[/projects/description.jsx]: ", data.projects[params.title]);
     // console.log("params = ", params);
 
 
 
-    // return (
-    //     <div>This is the description page</div>
-    // );
+    
 
     
     // Project Title | skills
@@ -60,11 +73,11 @@ export default function Description () {
 
         <div className={styles.mainContent}>
             {/* If is embed, use youtube video, else use standard slide show */}
-            {embed != null ? (
+            {/* {embed != null ? (
                 <iframe className={styles.embed}
                     src={embed}>
                 </iframe>
-            ) : (
+            ) : ( */}
             <div className={styles.slideContainer}>
                 <Slide   className={styles.imageSlideshow}
                     duration={3000}
@@ -82,12 +95,12 @@ export default function Description () {
                               </video>
                             ) : 
                             (
-                                // image.includes("embed") ? (
-                                //     <iframe className={styles.embed} src={image} width="550" height="400"></iframe>
-                                // ) : 
-                                // (
+                                image.includes("embed") ? (
+                                    <iframe className={styles.embed} src={image} width="550" height="400"></iframe>
+                                ) : 
+                                (
                                 <Image className={styles.projectImage} src={image} alt={title} width="550" height="400" />
-                                // )
+                                )
                             )}
                         </div>
 
@@ -101,7 +114,7 @@ export default function Description () {
                         
                 </Slide>
             </div> 
-            )}
+            {/* )} */}
             <div className={styles.paragraphs}>
                 {paragraphs.map((paragraph, index) => (<p className={styles.paragraph} key={index}>{paragraph}</p>))}
             </div>
