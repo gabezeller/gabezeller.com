@@ -1,31 +1,51 @@
+"use client";
+
 import styles from "./Description.module.css";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Image from "next/image";
 import React from "react";
+import { useParams } from "next/navigation";
+import data from "../../projects.json";
+import Link from "next/link";
+
 // import { ViewportBoundary } from "next/dist/lib/metadata/metadata-boundary";
 
-const Description = ({project}) => {
+export default function Description () {
+    // Get projectId from useParams
+    const params = useParams();
 
-    const {title, category, skills, bullets, paragraphs, images, embed} = project;
-    console.log("[description.jsx]: ", project);
+    // Unpack project data
+    const {title, category, skills, bullets, paragraphs, images, embed} = data.projects[params.title];
 
-  
+    // console.log("[/projects/description.jsx]: ", data.projects[params.title]);
+    // console.log("params = ", params);
+
+
+
+    // return (
+    //     <div>This is the description page</div>
+    // );
+
+    
     // Project Title | skills
     // Bullets
     // Images | Paragraphs
 
-    let slideImages = images;
-    if (embed) {
-        slideImages.push(embed);
-        console.log("embed added to images array: ", slideImages);
-    }
+    // let slideImages = images;
+    // if (embed) {
+    //     slideImages.push(embed);
+    //     console.log("embed added to images array: ", slideImages);
+    // }
     
 
 
 
     return (
     <div className={styles.description}>
+        <Link href="/projects">
+        <button className={styles.xButton} >x</button> 
+        </Link>
         <h2 className={styles.title}>
             {title}
         </h2>
@@ -88,7 +108,7 @@ const Description = ({project}) => {
         </div>
 
     </div>
-    );
+    ); 
 };
 
-export default Description
+// export default Description
