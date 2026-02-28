@@ -31,6 +31,7 @@ import { Fragment } from "react";
 // });
 
 const handJet = Handjet({
+  variable: "--font-hand-jet",
   subsets: ['latin'],
   display: 'swap',
 })

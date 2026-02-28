@@ -1,0 +1,178 @@
+
+.description {
+    
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+
+    /* width: 80vw;
+    height: 95vh; */
+    /* overflow: hidden; */
+    margin: 25px;
+    padding: 25px;
+
+    border-radius: 15px;
+    border: solid white 5px;
+    border-style: ridge;
+
+    transition: all 0.1s ease-in;
+
+    /* overflow-y: scroll;
+    scrollbar-color: white rgba(0, 0, 0, 0);
+    scrollbar-width: thin; */
+    
+    transition: filter 0.3s;
+    /* z-index: 20; */
+    position: relative;
+    /* backdrop-filter: blur(20px); */
+
+    animation: fadeInUp 0.8s ease;    
+}
+.mainContent {
+    display: flow-root;
+    
+}
+.xButton {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bolder;
+    
+
+    /* top: 10px;
+    right: 30px; */
+    top: 0px;
+    right: 25px;
+    z-index: 1;
+
+    transition: all 0.2s ease;
+}
+.xButton:hover {
+    color: rgb(255, 0, 0);
+}
+.xButton:active {
+    font-weight: 400;
+}
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.skills {
+    font-size: 1.25rem;
+}
+.bullets {
+    list-style:disc;
+    list-style-position:outside;
+
+    padding-left: 1.5em;
+}
+.bullet {
+    
+    font-size: 1.13rem;
+}
+.divider {
+    width: 100px;
+    border-bottom: solid white 2px;
+    margin: 20px 0px;
+}
+.imageSlideshow {
+
+    
+}
+.imageSlide {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.projectImage {
+    margin-left: auto;
+    margin-right: auto;
+
+    max-height: 500px;
+    width: auto;
+}
+.slideContainer {
+    width: 50%;
+    min-width: 400px;
+    
+    float: left;
+    margin-right: 20px;
+
+    margin-bottom: 20px;
+    
+}
+.embed {
+    /* width: 50%;
+    min-width: 400px;
+    height: 400px; */
+    width: 100%;
+    /* height: auto; */
+
+
+    margin-left: auto;
+    margin-right: auto;
+    /* float: left; 
+    margin-right: 20px;
+    margin-bottom: 20px; */
+}
+.paragraphs {
+    
+}
+.paragraph {
+    
+    font-size: 1.13rem;
+    margin-bottom: 20px;
+    
+}
+
+@media (max-width: 600px) {
+    .description {
+        /* width: 100vw;
+        height: 100vh; */
+        /* border: none; */
+        border-radius: 0px;
+        margin: 0;
+        /* position: absolute; */
+        /* top:0;
+        z-index: 2000; */
+    }
+    .mainContent {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .slideContainer {
+        min-width: 90vw;
+        width: 90vw;
+
+        
+        margin-right: unset;
+
+        float: none;
+
+        
+         
+        
+    }
+    .embed {
+        min-width: 90vw;
+        width: 90vw;
+
+        
+        margin-right: unset;
+
+        float: none;
+    }
+    .projectImage {
+        width: auto;
+        max-height: 80vh;
+       
+
+        
+    }
+
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
