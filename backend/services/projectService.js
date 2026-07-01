@@ -1,12 +1,41 @@
 const pool = require('../db/postgres');
+const s3_uri = process.env.S3_BUCKET_URL;
 
+// NEED TO TEST
 async function getProjects() {
     const result = await pool.query('SELECT * FROM project ORDER BY project_id DESC');
-    return result.rows;
+
+    if (!result) {
+        return null;
+    }
+
+    // get project image with sort order 0 for each project and 
+    // add it to the project object with url using s3_key and the S3 bucket url
+    const projectsWithImages = await Promise.all(result.rows.map(async (project) => {
+        const projectImages = await getProjectImages(project.project_id);
+        const mainImage = projectImages.find(image => image.sort_order === 0);
+        return {
+            // only need limited project info for projects page
+            title: project.title,
+            slug: project.slug,
+            technologies: project.technologies,
+            // ...project,
+            main_image_url: mainImage ? `${s3_uri}/${mainImage.s3_key}` : null
+        };
+    }));
+
+    
+
+
+    return projectsWithImages;
 }
 
 async function getProjectBySlug(slug) {
     const result = (await pool.query('SELECT * FROM project WHERE slug = $1', [slug])).rows[0];
+
+    if (!result) {
+        return null;
+    }
 
     const project_id = result.project_id;
 
@@ -16,7 +45,7 @@ async function getProjectBySlug(slug) {
     const projectImages = (await getProjectImages(project_id)).map(image => {
         return {
             alt_text: image.alt_text,
-            url: `https://fakeurl/${image.s3_key}`,
+            url: `${s3_uri}/${image.s3_key}`,
             sort_order: image.sort_order
         }
     });
@@ -24,6 +53,7 @@ async function getProjectBySlug(slug) {
 
     
     // combine project and image results into a single object and return it
+    // 
     return {
         ...result,
         images: projectImages
