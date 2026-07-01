@@ -6,7 +6,6 @@ const PORT = process.env.PORT;
 const cors = require('cors');
 const projectRoutes = require('./routes/projects');
 
-console.log(process.env.SUPABASE_URL);
 // json support
 app.use(express.json());
 
