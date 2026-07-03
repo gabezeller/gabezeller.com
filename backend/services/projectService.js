@@ -1,7 +1,6 @@
 const pool = require('../db/postgres');
 const s3_uri = process.env.S3_BUCKET_URL;
 
-// NEED TO TEST
 async function getProjects() {
     const result = await pool.query('SELECT * FROM project ORDER BY project_id DESC');
 
@@ -19,7 +18,6 @@ async function getProjects() {
             title: project.title,
             slug: project.slug,
             technologies: project.technologies,
-            // ...project,
             main_image_url: mainImage ? `${s3_uri}/${mainImage.s3_key}` : null
         };
     }));
@@ -53,7 +51,6 @@ async function getProjectBySlug(slug) {
 
     
     // combine project and image results into a single object and return it
-    // 
     return {
         ...result,
         images: projectImages
