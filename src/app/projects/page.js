@@ -1,23 +1,41 @@
 "use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import data from "../projects.json";
+import { getProjects } from "../services/projectServices";
+// import data from "../projects.json";
+
 import "./page.css"
 import { useState, useEffect } from "react";
 import Description from "../Components/description";
+
+
+
 
 
 export default function Projects() {
     const [descriptionOpen, setDescriptionOpen] = useState(false);
     const [currProject, setCurrProject] = useState(null);
     const [renderingDescription, setRenderingDescription] = useState(false);
+    const [projects, setProjects] = useState([]);
 
 
     // Place holder project to prevent DOM updating when changing project selection
     const placeholderProject = {"title":"Title", "category":"Category", "skills":"Skills", "bullets":[], "paragraphs":[],
         "images":[]
     };
+
+    useEffect(() => {
+        async function fetchProjects() {
+            try {
+                const response = await getProjects();
+                setProjects(response);
+            } catch (error) {
+                console.error('Error fetching projects:', error);
+            }
+        }
+
+        fetchProjects();
+    }, []);
 
     // Read json
     // const projects = data.projects;
@@ -93,21 +111,21 @@ export default function Projects() {
 
     // Make render project card function
     const renderProject = (project, index) => {
-        const {title, skills, images, link} = project;
+        const {title, technologies, main_image_url, link, slug} = project;
         
         return (
             
                 
-            <Link key={index} href={`${link ? link : `/projects/${index}`}`}>
+            <Link key={index} href={`${link ? link : `/projects/${slug}`}`}>
                 <div  className="project-card" 
                 // onClick={() => handleProjectClick(project)}
                 >
                     
-                    <Image className="project-image" alt={title} src={images[0]} width={"300"} height={"200"} />
+                    <Image className="project-image" alt={title} src={main_image_url} width={"300"} height={"200"} />
 
                     <div className="project-text">
                         <div className="project-title">{title}</div>
-                        <div className="sub-text">{skills}</div>
+                        <div className="sub-text">{technologies.map((tech, i) => <span key={i}>{tech}{i < technologies.length - 1 ? ", " : ""}</span>)}</div>
                     </div>       
                     
                 </div>
@@ -142,7 +160,8 @@ export default function Projects() {
                     Software Development
                 </h3> */}
                 <div className="project-cards">
-                    {data.projects.map((project, index) => (renderProject(project, index)))}
+                    {projects.length === 0 ? <p>Loading projects...</p> :
+                    projects.map((project, index) => (renderProject(project, index)))}
                 </div>
 
             </div>
