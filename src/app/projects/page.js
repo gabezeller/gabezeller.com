@@ -24,6 +24,7 @@ export default function Projects() {
         "images":[]
     };
 
+    // Fetch projects from backend API
     useEffect(() => {
         async function fetchProjects() {
             try {
