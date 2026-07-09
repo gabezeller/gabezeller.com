@@ -112,12 +112,12 @@ export default function Projects() {
 
     // Make render project card function
     const renderProject = (project, index) => {
-        const {title, technologies, main_image_url, link, slug} = project;
+        const {title, technologies, main_image_url, link, slug, external_page} = project;
         
         return (
             
                 
-            <Link key={index} href={`${link ? link : `/projects/${slug}`}`}>
+            <Link key={index} href={`${external_page ? external_page : `/projects/${slug}`}`}>
                 <div  className="project-card" 
                 // onClick={() => handleProjectClick(project)}
                 >
@@ -162,7 +162,7 @@ export default function Projects() {
                 </h3> */}
                 <div className="project-cards">
                     {projects.length === 0 ? <p>Loading projects...</p> :
-                    projects.map((project, index) => (renderProject(project, index)))}
+                    projects.toReversed().map((project, index) => (renderProject(project, index)))}
                 </div>
 
             </div>
