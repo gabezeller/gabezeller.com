@@ -43,7 +43,7 @@ async function getProjectBySlug(slug) {
     const projectImages = (await getProjectImages(project_id)).map(image => {
         return {
             alt_text: image.alt_text,
-            url: `${s3_uri}/${image.s3_key}`,
+            url: image.s3_key.includes("https://") ? image.s3_key : `${s3_uri}/${image.s3_key}`,
             sort_order: image.sort_order
         }
     });
