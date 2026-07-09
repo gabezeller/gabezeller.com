@@ -18,7 +18,8 @@ async function getProjects() {
             title: project.title,
             slug: project.slug,
             technologies: project.technologies,
-            main_image_url: mainImage ? `${s3_uri}/${mainImage.s3_key}` : null
+            main_image_url: mainImage ? `${s3_uri}/${mainImage.s3_key}` : null,
+            external_page: project.external_page
         };
     }));
 
