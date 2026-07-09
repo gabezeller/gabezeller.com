@@ -4,6 +4,8 @@ import styles from "./AboutMe.module.css";
 import Image from "next/image";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+const images_url = "https://amzn-s3-portfolio-images-603767527189-us-east-2-an.s3.us-east-2.amazonaws.com/aboutme/";
+
 
 export default function AboutMe() {
 
@@ -20,15 +22,16 @@ export default function AboutMe() {
     ];
 
     const images = [
-              "/images/copper.jpg",
-  
-        // "/images/bobgrad.jpg",
-        // "/images/shrek2grad.jpg",
-  
-        "/images/floatpic.jpg",
-        "/images/NHBmammothskating.jpg",
-        "/images/snowboarding.jpg",
-        "/images/QuadPicture.jpg"
+        "copper.jpg",
+        "bobgrad.JPG",
+        "snowboarding.jpg",
+        "floatpic.jpg",
+        "shrek2grad.JPG",
+        "NHBmammothskating.jpg",
+        "QuadPicture.jpg",
+        "alleypic.JPEG"
+
+       
     ];
 
     
@@ -81,7 +84,7 @@ export default function AboutMe() {
                     </ul>
                     </div>
                     
-                    <Image className={styles.image} src="/images/careerfairpicture.jpg" alt="Me and a friend at the Grainger career fair" width="400" height="400" />
+                    <Image className={styles.image} src={`${images_url}careerfairpicture.jpg`} alt="Me and a friend at the Grainger career fair" width="400" height="400" />
                 
             </div>
 
@@ -100,7 +103,7 @@ export default function AboutMe() {
                     social events for the chapter.
                     </p>
 
-                    <Image className={styles.image} src="/images/triangleconventionpic.jpg" alt="Me at the Triangle National Convention" width="400" height="400" />
+                    <Image className={styles.image} src={`${images_url}triangleconventionpic.jpg`} alt="Me at the Triangle National Convention" width="400" height="400" />
                     <p className={styles.topMargin}>
                     In this position, I managed a $10,000 budget, led a team of 7 social coordinators, and focused 
                     on the overall success of the chapter in addition to my specific duties. The work was fulfilling, 
@@ -126,7 +129,7 @@ export default function AboutMe() {
                         and started back-end development. 
                     </p>
 
-                    <Image className={styles.image} src="/images/projectcodepresenting.jpg" alt="Me presenting end of semester Project Code project progress" width="400" height="400" />
+                    <Image className={styles.image} src={`${images_url}projectcodepresenting.jpg`} alt="Me presenting end of semester Project Code project progress" width="400" height="400" />
 
                     <p className={styles.topMargin}>
                         Previously, I worked in a group developing a mobile app to showcase events around the UIUC
@@ -168,7 +171,7 @@ export default function AboutMe() {
                     but my favorite is most genres of metal. Currently, I love listening to Slipknot, Deftones, Knocked Loose, and Lorna Shore.
                     </p>
 
-                    <Image className={styles.image} src="/images/knockedloose.JPG" alt="Knocked Loose picture" width="400" height="400" />
+                    <Image className={styles.image} src={`${images_url}knockedloose.JPG`} alt="Knocked Loose picture" width="400" height="400" />
 
                     <p className={styles.topMargin}>
                     In addition to my love for music, I also find joy in longboarding, especially around campus, exploring fashion through thrifting, 
@@ -188,7 +191,7 @@ export default function AboutMe() {
                     {images.map((image, index) => (
                         <div className={styles.imageSlide} key={index}>
 
-                                <Image className={styles.image} src={image} alt="General image" width="500" height="500" />
+                                <Image className={styles.image} src={`${images_url}slideshow/${image}`} alt="General image" width="500" height="500" />
 
            
                         </div>
