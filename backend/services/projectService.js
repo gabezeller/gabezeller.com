@@ -58,7 +58,7 @@ async function getProjectBySlug(slug) {
 }
 
 async function getProjectImages(projectId) {
-    const result = await pool.query('SELECT * FROM project_image WHERE project_id = $1', [projectId]);
+    const result = await pool.query('SELECT * FROM project_image WHERE project_id = $1 ORDER BY sort_order ASC', [projectId]);
     return result.rows;
 }
 
