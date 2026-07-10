@@ -10,6 +10,8 @@ const images_url = process.env.NEXT_PUBLIC_S3_IMAGE_URL + "aboutme/";
 export default function AboutMe() {
 
     const coursework = [
+        "cs361 - Systems Programming (C)",
+        "cs480 - Database Systems (PostgreSQL)",
         "cs374 - Intro to Algorithms and Models of Computation", 
         "cs225 - Data Structures and Algorithms (C++)",
         "cs415 - Game Development (Unreal Engine)",
