@@ -4,7 +4,7 @@ import styles from "./AboutMe.module.css";
 import Image from "next/image";
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-const images_url = "https://amzn-s3-portfolio-images-603767527189-us-east-2-an.s3.us-east-2.amazonaws.com/aboutme/";
+const images_url = process.env.NEXT_PUBLIC_S3_IMAGE_URL + "aboutme/";
 
 
 export default function AboutMe() {
