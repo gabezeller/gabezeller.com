@@ -1,10 +1,11 @@
 
-
 import Image from "next/image";
 import Link from "next/link";
 import Header from "./Components/header";
 import HomePage from "./Components/homepage";
-import "./page.css"
+import "./page.css";
+const images_url = process.env.NEXT_PUBLIC_S3_IMAGE_URL;
+
 
 
 
@@ -19,7 +20,7 @@ export default function Home() {
         <p className="field">Software Development</p>
         <p className="field">Geographic Information Science</p>
         <div className="icons">
-            <Link className="resumeicon" href="images/Gabe_Zeller_Resume.pdf">
+            <Link className="resumeicon" href={`${images_url}Gabe_Zeller_CV.pdf`}>
                 <button >
                   <b>Resume</b>
                 </button>
@@ -28,7 +29,7 @@ export default function Home() {
         </div>
       </div>
       <div className="headshot">
-        <Image className="headshot" alt="Headshot" src="/images/headshot.png" width="400" height="400"/>
+        <Image className="headshot" alt="Headshot" src={`${images_url}headshot.png`} width="400" height="400"/>
       </div>
       
     </div>
